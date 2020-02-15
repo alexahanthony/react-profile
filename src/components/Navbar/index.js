@@ -1,10 +1,15 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 
 export default function Navbar() {
     return (
         <div>
-            
+            <Link to='/'></Link>
+            <Link to='/about'>About</Link>
+            <Link to='/contact'>Contact</Link>
+            <Link to='/portfolio'>Portfolio</Link>
 
+{/* 
 <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark d-flex">
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,7 +45,7 @@ export default function Navbar() {
           </ul>
         </div>
       </div>
-    </nav>
-        </div>
+</nav> */}
+        </div> 
     )
 }
