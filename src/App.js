@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Contact from './components/Contact'
+import Profile from './components/Profile'
+// import Portfolio from './components/Portfolio'
+import Navbar from './components/Navbar'
+// import Footer from './components/Footer'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+        <h1>Alexa's React Portfolio</h1>
+        <Navbar/>
+        <Contact/>
+        {/* <Portfolio/> */}
+        <Profile/>
+        {/* <Footer/> */}
     </div>
   );
 }
