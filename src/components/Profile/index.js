@@ -1,4 +1,7 @@
 import React from 'react'
+import './style.css'
+import Resume from '../../assets/Alexa_H_Anthony_Resume_2019.pdf'
+import Alexa from '../../assets/alexa.jpg'
 
 export default function Profile() {
     return (
@@ -11,15 +14,14 @@ export default function Profile() {
                     </div>
                     <div className="col-sm-3"></div>
                     <div className="col-sm-4 text-right">
-                        <p><a target="_blank" href="./assets/Alexa_H_Anthony_Resume_2019.pdf">View Resume</a></p>
+                        <a href={Resume}  target="_blank"><strong>View Resume</strong></a>
                     </div>
                     <div className="col-sm-1"></div>
                 </div>
                 <hr/>
                     <div className="row">
-                        <div className="col-sm-12">
-                            {/* <img src="https://miro.medium.com/max/3150/1*sZ0ApCMiMpk6lwJ0XAmO1Q.jpeg" className="rounded float-left" */}
-                                {/* alt="Alexa Anthony Headshot" style="width:310px;height:300px"/> */}
+                        <div className="col-sm-12 rounded float-left">
+                        <img src={Alexa} alt="Alexa Headshot" width="500px" height="500px"/>
                                 <p>Alexa Anthony is the CEO of Magic Ai Corp., a computer vision-based machine learning company that
                                   collects
                                   and analyzes data on animal behavior. Alexa is a passionate and driven entrepreneur with a successful

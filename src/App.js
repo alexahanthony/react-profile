@@ -4,7 +4,7 @@ import Contact from './components/Contact'
 import Profile from './components/Profile'
 import Portfolio from './components/Portfolio'
 import Navbar from './components/Navbar'
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -27,6 +27,7 @@ function App() {
               <Portfolio/>
             </Route>
           </Switch>
+          <Footer/>
         </Router>
     </div>
   );

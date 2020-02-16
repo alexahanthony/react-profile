@@ -1,15 +1,12 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import './style.css'
 
 export default function Navbar() {
     return (
         <div>
             <Link to='/'></Link>
-            <Link to='/about'>About</Link>
-            <Link to='/contact'>Contact</Link>
-            <Link to='/portfolio'>Portfolio</Link>
-
-{/* 
+         <div className="container"> 
 <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark d-flex">
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,26 +23,24 @@ export default function Navbar() {
         </div>
         <div className="col-sm-4"></div>
         <div className="col-sm-4">
-          <ul className="navbar-nav text-right">
-            <li className="nav-item">
-              <a className="nav-link" href="index.html">
-                <h5>About </h5>
-              </a>
+          <ul className="navbar-nav text-right text-white">
+            <li className="nav-item nav-link text-white">
+            <Link to='/about'><h5>About </h5></Link>
+                
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="portfolio.html">
-                <h5>Portfolio </h5>
-              </a>
+            <li className="nav-item nav-link">
+              <Link to='/portfolio'> <h5>Portfolio </h5></Link>
+              
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="contact.html">
-                <h5>Contact</h5>
-              </a>
+            <li className="nav-item nav-link">
+            <Link to='/contact'><h5>Contact</h5></Link>
+                
             </li>
           </ul>
         </div>
       </div>
-</nav> */}
+</nav>
+</div>
         </div> 
     )
 }
