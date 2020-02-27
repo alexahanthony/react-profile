@@ -9,18 +9,42 @@ import Pig from '../../assets/pig-e-bank.png'
 import Code from '../../assets/code-quiz.png'
 import Burger from '../../assets/burger-logger.png'
 import Team from '../../assets/team-profile-generator.png'
+import Google from '../../assets/googlebooks.png'
+import Spontaneity from '../../assets/spontaneity.png'
 
 export default function Portfolio() {
   return (
-    <div>
-
-      <div className="container">
+  
+<div className="container">
         <div className="row">
           <div className="col-sm-12">
             <h1><strong>Portfolio</strong></h1>
           </div>
         </div>
         <hr></hr>
+        <div className="row">
+          <div className="col-md-4 col-sm-6 row-padding float-left">
+            <div className="containerphoto">
+              <img src={Spontaneity} alt="Spontaneity App Screen Shot" width="400px" height="250px"/>
+              <div className="content">
+                <h5><a target="_blank" href="https://aqueous-savannah-60861.herokuapp.com/"><strong>Spontaneity</strong></a></h5>
+                <h6><a target="_blank" href="https://github.com/GregReneris/Lifestyleapp">Github Repo</a></h6>
+              </div>
+            </div>
+          </div>
+        
+        <div className="col-md-4 col-sm-6  row-padding float-left">
+          <div className="containerphoto">
+            <img src={Google} alt="Google Books Screen Shot" width="400px" height="250px"/>
+            <div className="content">
+              <h5><a target="_blank" href="https://gentle-bastion-97774.herokuapp.com/"><strong>Google Books</strong></a></h5>
+              <h6><a target="_blank" href="https://github.com/alexahanthony/google-books-search">Github Repo</a></h6>
+            </div>
+          </div>
+        </div>
+        </div>
+
+      <div className="container">
         <div className="row">
           <div className="col-md-4 col-sm-6 row-padding float-left">
             <div className="containerphoto">
@@ -108,6 +132,6 @@ export default function Portfolio() {
 
     </div>
     </div>
-
+    
   )
 }

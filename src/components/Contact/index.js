@@ -1,5 +1,7 @@
-import React from 'react'
+import React from "react";
+import FormInput from "../FormInput/index"
 import './style.css'
+
 
 export default function Contact() {
     return (
@@ -13,31 +15,15 @@ export default function Contact() {
                         <p>e: alexahanthony@gmail.com   |   c: (425)213-4776 </p>
                     </div>
                 </div>
-                <hr/>
-                    <form>
-                        <div className="form-group">
-                            <label for="formGroupExampleInput"/>
-                                <p>Name</p>
-                            
-                            <input type="text" className="form-control" id="formGroupExampleInput" placeholder="Your Name"/>
-        
-                        </div>
-                        <div className="form-group">
-                            <label for="exampleFormControlInput1"/>
-                                <p>Email Address</p>
-                        
-                            <input type="email" className="form-control" id="exampleFormControlInput1" placeholder="example@gmail.com"/>
-        </div>
-                            <div className="form-group">
-                                <label for="exampleFormControlTextarea1"/>
-                                    <p>Message</p>
-                            
-                                <textarea className="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                            </div>
-                            <button type="button" className="btn btn-dark">Submit</button>
-      </form>
-    </div>
-
+                <hr />
+                <form>
+                    <div className="form-group">
+                        <label for="formGroupExampleInput" />
+                        <FormInput />
+                    </div>
+                </form>
             </div>
-            )
+
+        </div>
+    )
 }
