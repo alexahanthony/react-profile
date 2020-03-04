@@ -9,8 +9,8 @@ import Pig from '../../assets/pig-e-bank.png'
 import Code from '../../assets/code-quiz.png'
 import Burger from '../../assets/burger-logger.png'
 import Team from '../../assets/team-profile-generator.png'
-import Google from '../../assets/googlebooks.png'
 import Spontaneity from '../../assets/spontaneity.png'
+import Employee from '../../assets/employee.png'
 
 export default function Portfolio() {
   return (
@@ -33,15 +33,15 @@ export default function Portfolio() {
             </div>
           </div>
         
-        <div className="col-md-4 col-sm-6  row-padding float-left">
-          <div className="containerphoto">
-            <img src={Google} alt="Google Books Screen Shot" width="400px" height="250px"/>
-            <div className="content">
-              <h5><a target="_blank" href="https://gentle-bastion-97774.herokuapp.com/"><strong>Google Books</strong></a></h5>
-              <h6><a target="_blank" href="https://github.com/alexahanthony/google-books-search">Github Repo</a></h6>
+          <div class="col-md-4 col-sm-6  row-padding float-left">
+            <div class="containerphoto">
+              <img src={Tread} class="rounded float-left" alt="developer profile" width="400px" height="250px"/>
+              <div class="content">
+                <h5><a target="_blank" href="https://tread-light.herokuapp.com/"><strong>Tread Lightly</strong></a></h5>
+                <h6><a target="_blank" href="https://github.com/patorrad/treadLight">Github Repo</a></h6>
+              </div>
             </div>
           </div>
-        </div>
         </div>
 
       <div className="container">
@@ -110,15 +110,15 @@ export default function Portfolio() {
         </div>
 
         <div class="row">
-          <div class="col-md-4 col-sm-6  row-padding float-left">
-            <div class="containerphoto">
-              <img src={Tread} class="rounded float-left" alt="developer profile" width="400px" height="250px"/>
-              <div class="content">
-                <h5><a target="_blank" href="https://tread-light.herokuapp.com/"><strong>Tread Lightly</strong></a></h5>
-                <h6><a target="_blank" href="https://github.com/patorrad/treadLight">Github Repo</a></h6>
-              </div>
+          <div className="col-md-4 col-sm-6  row-padding float-left">
+          <div className="containerphoto">
+            <img src={Employee} alt="Google Books Screen Shot" width="400px" height="250px"/>
+            <div className="content">
+              <h5><a target="_blank" href=" https://employee-tracker-aa.herokuapp.com/"><strong>Employee Directory</strong></a></h5>
+              <h6><a target="_blank" href="https://github.com/alexahanthony/employee-tracker-aha">Github Repo</a></h6>
             </div>
           </div>
+        </div>
           <div class="col-md-4 col-sm-6  row-padding float-left">
             <div class="containerphoto">
               <img src={Team} class="rounded float-left" alt="team profile generator" width="400px" height="250px"/>
